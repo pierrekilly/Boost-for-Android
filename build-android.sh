@@ -86,7 +86,7 @@ do_download ()
 	CLEAN=yes
 }
 
-LIBRARIES=--with-libraries=date_time,filesystem,program_options,regex,signals,system,thread,iostreams
+LIBRARIES=--with-libraries=chrono,date_time,filesystem,program_options,regex,signals,system,thread,iostreams
 
 register_option "--with-libraries=<list>" do_with_libraries "Comma separated list of libraries to build."
 do_with_libraries () { LIBRARIES="--with-libraries=$1"; }
