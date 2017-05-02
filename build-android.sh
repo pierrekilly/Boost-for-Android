@@ -30,12 +30,16 @@
 BOOST_VER1=1
 BOOST_VER2=64
 BOOST_VER3=0
-register_option "--boost=<version>" boost_version "Boost version to be used, one of {1.64.0,1.55.0,1.54.0,1.53.0,1.49.0, 1.48.0, 1.45.0}, default is 1.64.0."
+register_option "--boost=<version>" boost_version "Boost version to be used, one of {1.64.0,1.58.0,1.55.0,1.54.0,1.53.0,1.49.0, 1.48.0, 1.45.0}, default is 1.64.0."
 boost_version()
 {
   if [ "$1" = "1.64.0" ]; then
     BOOST_VER1=1
     BOOST_VER2=64
+    BOOST_VER3=0
+  elif [ "$1" = "1.58.0" ]; then
+    BOOST_VER1=1
+    BOOST_VER2=58
     BOOST_VER3=0
   elif [ "$1" = "1.55.0" ]; then
     BOOST_VER1=1
