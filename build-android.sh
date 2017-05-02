@@ -256,7 +256,7 @@ case "$NDK_RN" in
 		;;
 	"14b")
 		TOOLCHAIN=${TOOLCHAIN:-llvm}
-		CXXPATH=$ANDROID_NDK_TOOLCHAIN/bin/clang++
+		CXXPATH=$ANDROID_STANDALONE_TOOLCHAIN/bin/clang++
 		TOOLSET=clang-androidR14b
 		;;
 	*)
