@@ -46,7 +46,7 @@ using clang : androidR14b
 clang++
 :
 <compileflags>"-target thumbv7-none-linux-androideabi"
-<cxxflags>-std=c++11
+#<cxxflags>-std=c++11
 ;
 # --------------------------------------------------------------------
 #using gcc : androidR14b
